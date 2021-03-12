@@ -7,12 +7,4 @@ cache:
   - node_modules
 script:
 - make build
-- make test
-deploy:
-  provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
-  skip_cleanup: true
-  on:
-    tags: true
-    
+- make test  
